@@ -10,3 +10,9 @@
 @theme {
   --font-jost: "Jost", sans-serif;
 }
+
+@layer utilities {
+  .text-10xl {
+    font-size: 18rem;
+  }
+}
