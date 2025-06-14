@@ -4,7 +4,7 @@ function App() {
 
   return (
     <>
-      <div className="bg-neutral-900 min-h-screen text-white font-jost text-2xl">
+      <div className="bg-neutral-900 h-1000 text-white font-jost text-2xl">
 
     <Header/>
     <Page1/>

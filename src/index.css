@@ -11,8 +11,9 @@
   --font-jost: "Jost", sans-serif;
 }
 
-@layer utilities {
-  .text-10xl {
-    font-size: 18rem;
+
+@media (min-width: 1024px) {
+  .lg\:text-10xl {
+    @apply text-[18rem];
   }
 }
