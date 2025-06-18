@@ -1,8 +1,9 @@
 import Shoe1 from '../assets/pictures/Shoe.webp';
+import Award from '../assets/pictures/Award!.webp';
 
 export default function Page1() {
     return(
-<div className="relative h-screen flex items-center justify-center overflow-hidden bg-black">
+<div className="h-screen flex items-center justify-center overflow-hidden bg-black">
 
   {/* Glows */}
   <div className="absolute w-150 h-150 bg-blue-500 opacity-15 blur-3xl rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0"></div>
@@ -20,6 +21,24 @@ export default function Page1() {
   className="absolute z-10 w-[120vw] sm:w-[80vw] max-w-370 top-[57%] left-1/2 -translate-x-1/2 -translate-y-1/2"
 />
 
+<img
+  src={Award}
+  alt="award"
+  className="absolute left-30 bottom-40 lg:w-50 mg:w-30 w-20"
+></img>
+
+<div className="absolute right-30 bottom-40 flex space-x-1 items-stretch">
+  <div className="w-2 bg-white"></div>
+  <div className="w-1 bg-white"></div>
+  <div className="w-1 bg-white"></div>
+
+  <div className="text-white text-smxl w-60 flex items-center pl-2">
+    The Nike Air Force line is a highly popular and versatile sneaker, praised for its comfort, style, and durability. It's known for its clean, classic design that can be dressed up or down.
+  </div>
+</div>
+
+<div className="bar absolute bottom-30"></div>
+<div className="text-white absolute bottom-15 text-4xl">JUST DO IT</div>
 </div>
 
 

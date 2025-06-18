@@ -17,3 +17,13 @@
     @apply text-[18rem];
   }
 }
+
+.text-smxl {
+  @apply text-[1.1rem];
+}
+
+.bar {
+  @apply mx-auto bg-gray-400;
+  height: 1px;
+  width: 90%;
+}
