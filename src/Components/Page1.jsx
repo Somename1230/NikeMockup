@@ -27,7 +27,7 @@ export default function Page1() {
 <img
   src={Award}
   alt="award"
-  className="invisible md:visible absolute left-30 bottom-40 lg:w-50 w-30"
+  className="invisible md:visible absolute left-30 bottom-61 lg:bottom-55 lg:w-50 w-30"
 ></img>
 
 <div className="absolute sm:right-30 bottom-[20%] flex space-x-1 items-stretch">
@@ -41,7 +41,7 @@ export default function Page1() {
 </div>
 
 <div className="bar absolute bottom-30"></div>
-<div className="text-white absolute bottom-15 text-4xl font-bold transform scale-y-130">JUST DO IT</div>
+<div className="text-white absolute bottom-0 text-4xl font-bold transform scale-y-130">JUST DO IT</div>
 </div>
 
 
