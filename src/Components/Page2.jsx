@@ -2,13 +2,13 @@ import ShoeGrid from '../assets/pictures/ShoeGrid!.webp';
 
 export default function Page2() {
     return(
-        <div className="relative h-screen flex items-center justify-center overflow-hidden bg-black">
+        <div className="relative h-[75vh] flex items-center justify-center overflow-hidden bg-black">
 
             <img src={ShoeGrid}
             className="w-200"
             />
 
-            <div className="text-white absolute top-15 w-100 text-center ">
+            <div className="text-white absolute top-15 sm:w-100 w-60 text-center text-sm sm:text-lg">
                 Nike’s invincible features our
                 softest,most responsive foam. So you
                 can keep doing what you love. 

@@ -3,11 +3,9 @@ import shoe1 from "../Assets/pictures/jordan.webp";
 import shoe2 from "../Assets/pictures/dunk2.webp";
 import shoe3 from "../Assets/pictures/nikeairmax.webp";
 import CartPopup from "./Cart/CartPopup";
-import { CartProvider } from "./Cart/CartContext";
 
 export default function JordanShoeShowcase() {
   return (
-    <CartProvider>
       <main className="w-full relative">
         <ShoeBlock
           image={shoe1}
@@ -33,6 +31,5 @@ export default function JordanShoeShowcase() {
 
         <CartPopup />
       </main>
-    </CartProvider>
   );
 }

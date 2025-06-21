@@ -19,7 +19,7 @@ export default function Page1() {
   <img 
     src={Shoe1}
     alt="Nike Shoe"
-    className="absolute z-10 w-140 sm:w-[80vw] max-w-370 sm:top-[50%] top-[40%] left-1/2 -translate-x-1/2 -translate-y-1/2"
+    className="absolute z-10 w-100 sm:w-[80vw] max-w-370 sm:top-[50%] top-[40%] left-1/2 -translate-x-1/2 -translate-y-1/2"
   />
 </div>
 
@@ -35,13 +35,13 @@ export default function Page1() {
   <div className="w-1 bg-white"></div>
   <div className="w-1 bg-white"></div>
 
-  <div className="text-white text-smxl w-85 flex items-center pl-2">
+  <div className="text-white sm:text-smxl text-sm w-63 flex items-center pl-2">
     The Nike Air Force line is a highly popular and versatile sneaker, praised for its comfort, style, and durability. It's known for its clean, classic design that can be dressed up or down.
   </div>
 </div>
 
-<div className="bar absolute bottom-30"></div>
-<div className="text-white absolute bottom-0 text-4xl font-bold transform scale-y-130">JUST DO IT</div>
+<div className="bar absolute bottom-[15%]"></div>
+<div className="text-white absolute bottom-[3%] text-4xl font-bold transform scale-y-130">JUST DO IT</div>
 </div>
 
 

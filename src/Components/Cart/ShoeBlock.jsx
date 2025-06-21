@@ -1,6 +1,6 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef, useState } from "react";
-import { useCart } from "./CartContext";
+import { useCart } from "./CartContext"; 
 
 export default function ShoeBlock({ image, title, desc, sizes, flip = false }) {
   const ref = useRef(null);

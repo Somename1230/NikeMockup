@@ -12,14 +12,16 @@
 }
 
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px)  {
   .lg\:text-10xl {
     @apply text-[18rem];
   }
 }
 
-.text-smxl {
+@media (min-width: 500px) {
+  .sm\:text-smxl {
   @apply text-[1.1rem];
+}
 }
 
 .bar {
