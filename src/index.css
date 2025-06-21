@@ -1,31 +1,32 @@
+@import "tailwindcss";
+
 @font-face {
   font-family: 'Jost';
-  src: url("../assets/fonts/Jost-Regular.woff2") format("woff2");
+  src: url("/Jost-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
-@import "tailwindcss";
-
-@theme {
-  --font-jost: "Jost", sans-serif;
-}
-
-
-@media (min-width: 1024px)  {
-  .lg\:text-10xl {
-    @apply text-[18rem];
+@layer utilities {
+  .font-jost {
+    font-family: 'Jost', sans-serif;
   }
-}
 
-@media (min-width: 500px) {
-  .sm\:text-smxl {
-  @apply text-[1.1rem];
-}
-}
+  @media (min-width: 1024px) {
+    .lg\:text-10xl {
+      font-size: 18rem;
+    }
+  }
 
-.bar {
-  @apply mx-auto bg-gray-400;
-  height: 1px;
-  width: 90%;
+  @media (min-width: 500px) {
+    .sm\:text-smxl {
+      font-size: 1.1rem;
+    }
+  }
+
+  .bar {
+    @apply mx-auto bg-gray-400;
+    height: 1px;
+    width: 90%;
+  }
 }

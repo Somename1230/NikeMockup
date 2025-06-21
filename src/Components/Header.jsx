@@ -37,7 +37,7 @@ const navigate = useNavigate();
           </button>
 
 <button onClick={() => navigate('/checkout')}>
-  Go to Checkout
+CHECKOUT
 </button>
 
           {/* Sidebar Drawer (mobile) */}
@@ -47,7 +47,6 @@ const navigate = useNavigate();
               <li><a href="/" className="hover:underline">Locate</a></li>
               <li><a href="/" className="hover:underline">Legal</a></li>
               <li><a href="/" className="hover:underline">Contact</a></li>
-              <li><button className="mt-6">SHOP</button></li>
             </ul>
           </div>
 

@@ -1,9 +1,12 @@
 import { useCart } from "./CartContext"; 
 import { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 
 export default function CartPopup() {
   const [isOpen, setIsOpen] = useState(false);
   const { cartItems = [] } = useCart() || {};
+
+  const navigate = useNavigate();
 
   return (
     <>
@@ -23,8 +26,13 @@ export default function CartPopup() {
     </button>
   </div>
 
+  <div className="text-xl font-semibold flex justify-between items-center">
+    
+    <h2>Cart</h2>
+    <button onClick={() => navigate('/checkout')}
+    className="pr-4 hover:underline">Checkout</button>
+    </div>
 
-  <h2 className="text-xl font-semibold">Cart</h2>
   {cartItems.length === 0 ? (
     <p className="text-sm text-neutral-600">Your cart is empty.</p>
   ) : (

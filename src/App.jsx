@@ -8,6 +8,7 @@ import Footer from './Components/Footer';
 import Checkout from './Components/Cart/Checkout';
 import { CartProvider } from './Components/Cart/CartContext';
 import PageWrapper from './Components/PageWrapper';
+import Map from './Components/Map';
 
 function App() {
 const location = useLocation();
@@ -26,6 +27,7 @@ const location = useLocation();
                   <Page1 />
                   <Page2 />
                   <Page3 />
+                  <Map />
                   <Footer />
                 </PageWrapper>
               }

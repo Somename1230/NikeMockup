@@ -9,4 +9,8 @@ export default function JordanShoeShowcase() {
   const removeFromCart = (index) => {
     setCartItems((prev) => prev.filter((_, i) => i !== index));
   };
+
+  return(
+    <div className="relative"></div>
+  )
 }

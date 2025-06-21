@@ -19,12 +19,12 @@ export default function ShoeBlock({ image, title, desc, sizes, flip = false }) {
       <section className="flex items-center justify-center relative bg-neutral-900 h-140 w-[80vw] mx-auto">
         <motion.div
           style={{ scale }}
-          className={`relative flex flex-col md:flex-row items-center justify-center gap-2 ${flip ? "md:flex-row-reverse" : ""}`}
+          className={`relative flex flex-col lg:flex-row items-center justify-center gap-2 ${flip ? "lg:flex-row-reverse" : ""}`}
         >
           <img
             src={image}
             alt={title}
-            className="w-[320px] md:w-[500px] object-contain z-10"
+            className="w-[320px] lg:w-[500px] object-contain z-10"
           />
 
           <div className="bg-zinc-800 p-6 sm:p-10 max-w-[400px] text-white relative z-20">

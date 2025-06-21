@@ -6,7 +6,7 @@ import CartPopup from "./Cart/CartPopup";
 
 export default function JordanShoeShowcase() {
   return (
-      <main className="w-full relative">
+      <main className="w-full relative pb-20 bg-black">
         <ShoeBlock
           image={shoe1}
           title="Air Jordan 1"
