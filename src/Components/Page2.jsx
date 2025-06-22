@@ -1,4 +1,3 @@
-import ShoeGrid from '../assets/pictures/ShoeGrid!.webp';
 
 export default function Page2() {
 
@@ -11,7 +10,7 @@ export default function Page2() {
 
   return (
     <div className="relative h-[75vh] flex items-center justify-center overflow-hidden bg-black">
-      <img src={ShoeGrid} className="w-200" />
+      <img src="/pictures/ShoeGrid!.webp" className="w-200" />
 
       <div className="text-white absolute top-15 sm:w-100 w-60 text-center text-sm sm:text-lg">
         Nike’s invincible features our

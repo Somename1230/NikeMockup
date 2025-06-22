@@ -1,4 +1,3 @@
-
 export default function Page1() {
     return(
 <div className="h-screen flex items-center justify-center overflow-hidden bg-black">
