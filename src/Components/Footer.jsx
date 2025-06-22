@@ -1,4 +1,9 @@
+import { useNavigate } from 'react-router-dom';
+
 export default function Footer() {
+
+  const navigate = useNavigate();
+  
 return(
 
 <footer className="bg-black text-white py-8 px-4 relative">
@@ -8,9 +13,9 @@ return(
 
     {/* Right side (links) */}
     <div className="flex space-x-6 text-sm">
-      <a href="#" className="hover:underline">Privacy Policy</a>
-      <a href="#" className="hover:underline">Terms of Service</a>
-      <a href="#" className="hover:underline">Contact</a>
+      <button className="hover:underline" onClick={() => navigate('/contact')}>Privacy Policy</button>
+      <button className="hover:underline" onClick={() => navigate('/contact')}>Terms of Service</button>
+      <button className="hover:underline" onClick={() => navigate('/contact')}>Contact</button>
     </div>
   </div>
 </footer>

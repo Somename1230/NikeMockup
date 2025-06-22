@@ -58,7 +58,9 @@ export default function Checkout() {
               Total: ${totalPrice.toFixed(2)}
             </p>
             <div className="flex gap-4">
-              <button className="bg-white text-black px-4 py-2 hover:bg-neutral-200 transition">
+              <button 
+               onClick={() => alert('This is a mock payment action, your website will be able to process payments in the future')}
+                className="bg-white text-black px-4 py-2 hover:bg-neutral-200 transition">
                 Pay Now
               </button>
               <button 

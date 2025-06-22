@@ -42,7 +42,7 @@ export default function CartPopup() {
           <p className="text-sm text-neutral-600">Your cart is empty.</p>
         ) : (
           <>
-            <ul className="space-y-2 max-h-40 overflow-y-auto scroll-smooth">
+            <ul className="space-y-2 max-h-20 overflow-y-auto scroll-smooth">
               {cartItems.map((item, index) => (
                 <li key={index} className="flex items-center space-x-2 text-sm">
                   {item.image && (

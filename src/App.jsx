@@ -30,7 +30,6 @@ const location = useLocation();
                   <Page3 />
                   <Map />
                   <Footer />
-                  <Contact />
                 </PageWrapper>
               }
             />
@@ -39,6 +38,15 @@ const location = useLocation();
               element={
                 <PageWrapper>
                   <Checkout />
+                </PageWrapper>
+              }
+            />
+
+            <Route
+              path="/contact"
+              element={
+                <PageWrapper>
+                  <Contact />
                 </PageWrapper>
               }
             />

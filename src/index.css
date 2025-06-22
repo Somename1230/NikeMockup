@@ -24,6 +24,12 @@
     }
   }
 
+@media (max-width: 449px) {
+  .xs\:hidden-below {
+    display: none;
+  }
+}
+
   .bar {
     @apply mx-auto bg-gray-400;
     height: 1px;

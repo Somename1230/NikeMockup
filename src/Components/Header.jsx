@@ -38,8 +38,8 @@ const navigate = useNavigate();
           <ul className="hidden xl:flex space-x-12">
             <li><Link to="/" className="hover:underline" onClick={handleScroll2}>Home</Link></li>
             <li><Link to="/" className="hover:underline" onClick={handleScroll}>Locate</Link></li>
-            <li><Link to="/" className="hover:underline" onClick={handleScroll}>Legal</Link></li>
-            <li><Link to="/" className="hover:underline" onClick={handleScroll}>Contact</Link></li>
+            <li><button className="hover:underline" onClick={() => navigate('/contact')}>Legal</button></li>
+            <li><button className="hover:underline" onClick={() => navigate('/contact')}>Contact</button></li>
           </ul>
 
           {/* Hamburger (mobile) */}
@@ -55,19 +55,66 @@ CHECKOUT
 </button>
 
           {/* Sidebar Drawer (mobile) */}
-          <div className={`fixed top-0 left-0 h-full w-64 bg-neutral-900 text-white p-6 transform transition-transform duration-300 ease-in-out z-40 ${isOpen ? "translate-x-0" : "-translate-x-full"}`}>
-            <ul className="flex flex-col space-y-6 mt-20">
-              <li><a href="/" className="hover:underline">Home</a></li>
-              <li><a href="/" className="hover:underline">Locate</a></li>
-              <li><a href="/" className="hover:underline">Legal</a></li>
-              <li><a href="/" className="hover:underline">Contact</a></li>
-            </ul>
-          </div>
+<div 
+  className={`fixed top-0 left-0 h-full w-64 bg-neutral-800 text-white p-6 
+             transform transition-all duration-300 ease-in-out z-40 shadow-2xl
+             ${isOpen ? "translate-x-0" : "-translate-x-full"}`}
+>
+  <div className="flex flex-col h-full">
+    {/* Logo/Branding area - optional but recommended */}
+    <div className="mb-8 pt-3 border-b border-neutral-700 pb-4">
+      <h2 className="text-xl font-semibold">Menu</h2>
+    </div>
+    
+    {/* Navigation Links */}
+    <ul className="flex flex-col space-y-4">
+      <li>
+        <Link 
+          to="/" 
+          className="block py-2 px-3 hover:bg-neutral-700 transition-colors duration-200"
+          onClick={handleScroll2}
+        >
+          Home
+        </Link>
+      </li>
+      <li>
+        <Link 
+          to="/" 
+          className="block py-2 px-3 hover:bg-neutral-700 transition-colors duration-200"
+          onClick={handleScroll}
+        >
+          Locate
+        </Link>
+      </li>
+      <li>
+        <button 
+          className="w-full text-left py-2 px-3 hover:bg-neutral-700 transition-colors duration-200"
+          onClick={() => navigate('/contact')}
+        >
+          Legal
+        </button>
+      </li>
+      <li>
+        <button 
+          className="w-full text-left py-2 px-3 hover:bg-neutral-700 transition-colors duration-200"
+          onClick={() => navigate('/contact')}
+        >
+          Contact
+        </button>
+      </li>
+    </ul>
+
+    {/* Optional footer area */}
+    <div className="mt-auto pt-4 border-t border-neutral-700 text-sm text-neutral-400">
+      <p>© {new Date().getFullYear()} Your Brand</p>
+    </div>
+  </div>
+</div>
 
 
           {isOpen && (
             <div
-              className="fixed inset-0 bg-black opacity-50 z-30 lg:hidden"
+              className="fixed inset-0 bg-white opacity-50 z-30 lg:hidden"
               onClick={() => setIsOpen(false)}
             />
           )}
