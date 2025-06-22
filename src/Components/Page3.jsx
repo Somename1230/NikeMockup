@@ -1,7 +1,7 @@
 import ShoeBlock from "./Cart/ShoeBlock";
-import shoe1 from "../Assets/pictures/jordan.webp";
-import shoe2 from "../Assets/pictures/dunk2.webp";
-import shoe3 from "../Assets/pictures/nikeairmax.webp";
+import shoe1 from "../assets/pictures/jordan.webp";
+import shoe2 from "../assets/pictures/dunk2.webp";
+import shoe3 from "../assets/pictures/nikeairmax.webp";
 import CartPopup from "./Cart/CartPopup";
 
 export default function JordanShoeShowcase() {
