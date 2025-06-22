@@ -6,7 +6,21 @@ import { useNavigate } from 'react-router-dom';
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
-  
+    const handleScroll = () => {
+    window.scrollTo({
+      top: window.scrollY + 10000,
+      behavior: 'smooth',
+    });
+  }
+
+    const handleScroll2 = () => {
+    window.scrollTo({
+      top: window.scrollY - 10000,
+      behavior: 'smooth',
+    });
+  }
+
+
 const navigate = useNavigate();
 
   return (
@@ -22,10 +36,10 @@ const navigate = useNavigate();
 
           {/* Desktop Nav */}
           <ul className="hidden xl:flex space-x-12">
-            <li><a href="#" className="hover:underline">Home</a></li>
-            <li><a href="#" className="hover:underline">Locate</a></li>
-            <li><a href="#" className="hover:underline">Legal</a></li>
-            <li><a href="#" className="hover:underline">Contact</a></li>
+            <li><Link to="/" className="hover:underline" onClick={handleScroll2}>Home</Link></li>
+            <li><Link to="/" className="hover:underline" onClick={handleScroll}>Locate</Link></li>
+            <li><Link to="/" className="hover:underline" onClick={handleScroll}>Legal</Link></li>
+            <li><Link to="/" className="hover:underline" onClick={handleScroll}>Contact</Link></li>
           </ul>
 
           {/* Hamburger (mobile) */}

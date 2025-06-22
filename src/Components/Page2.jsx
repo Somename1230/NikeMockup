@@ -1,4 +1,3 @@
-import React from 'react';
 import ShoeGrid from '../assets/pictures/ShoeGrid!.webp';
 
 export default function Page2() {

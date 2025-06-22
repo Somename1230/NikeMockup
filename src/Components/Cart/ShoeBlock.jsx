@@ -15,7 +15,7 @@ export default function ShoeBlock({ image, title, desc, sizes, flip = false }) {
   const [selectedSize, setSelectedSize] = useState(null);
 
   return (
-    <section ref={ref} className="h-140 bg-black overflow-hidden">
+    <section ref={ref} className="h-140 bg-black relative overflow-hidden">
       <section className="flex items-center justify-center relative bg-neutral-900 h-140 w-[80vw] mx-auto">
         <motion.div
           style={{ scale }}
